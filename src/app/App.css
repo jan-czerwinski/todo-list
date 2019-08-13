@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.Tile{
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin: 20px;
+  background-color: #ffe491;
+  text-align: center;
+  line-height: 250px;
+}
+
+.TileChecked{
+  background-color: #3281a8;
+}
+
+.Check{
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+.Split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.Left {
+  width: 20%;
+  left: 0;
+  background-color: #111;
+}
+
+
+.Right {
+  width: 80%;
+  right: 0;
+  background-color: #0a618c;
+}
+
+
+.Centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
