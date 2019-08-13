@@ -23,7 +23,8 @@ export default class History{
   modifyObj(key, modObj){
     const obj = JSON.parse(localStorage.getItem(key))
     const modObjArr = Object.entries(modObj)
-    obj.modObjArr[0] = modObjArr[1]
+    console.log(modObjArr)
+    obj[modObjArr[0][0]] = modObjArr[0][1]
     localStorage.setItem(key, JSON.stringify(obj))
   }
 
